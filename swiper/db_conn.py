@@ -24,8 +24,8 @@ def init_db():
         df = df.head(100)
         
         for image_name in df["Image_Name"]:
-            source_file = "swiper/static/Food Images" + image_name + ".jpg"
-            destination_directory = "static/images"
+            source_file = "archive/Food Images/" + image_name + ".jpg"
+            destination_directory = "swiper\static\images"
             shutil.copy(source_file, destination_directory)
 
         for index, row in df.iterrows():
