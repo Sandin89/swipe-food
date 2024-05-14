@@ -9,4 +9,5 @@ body,html {
   font-family: sans-serif;
   align-items: center;
   text-align: center;
+  overflow-y: scroll;
 }
