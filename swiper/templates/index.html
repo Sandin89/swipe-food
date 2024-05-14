@@ -2,6 +2,19 @@
 {% block title %}Index{% endblock %}
 
 {% block content %}
+<div class="tinder">
+  <div class="tinder--cards">
+    {% for recipe in recipes %}
+      <div class="tinder--card">
+        <img src="{{ url_for('static', filename='images/' ~ recipe.image_name) }}" alt="{{ recipe.title }}">
+        <h3>{{ recipe.title }}</h3>
+      </div>
+    {% endfor %}
+  </div>
 
-
+  <div class="tinder--buttons">
+    <button id="nope">Nope</button>
+    <button id="love">Love</button>
+  </div>
+</div>
 {% endblock %}
