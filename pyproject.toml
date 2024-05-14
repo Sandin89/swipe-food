@@ -1,0 +1,25 @@
+
+[project]
+name = "swiper"
+version = "1.0.0"
+description = "Swipe Food"
+readme = "README.md"
+dependencies = [
+    "flask",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+branch = true
+source = ["swiper", "tests"]

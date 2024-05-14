@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="list">
+  {% for recipe in recipes %}
+    <div class="card">
+      <!-- <img src="{{ url_for('static', filename='images/' ~ recipe.image_name) }}"> -->
+      <h1>{{ recipe.title }}</h1>
+
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
