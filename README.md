@@ -24,24 +24,10 @@ SECURITY_PASSWORD_SALT="SECURITY_PASSWORD_SALT"
 
 ## Create .flaskenv file for environment variables
 ```python
-FLASK_APP = CodeCraft
+FLASK_APP = swiper
 FLASK_DEBUG = True
-FLASK_PORT = 5000
-```
-## Styling
-
-Open terminal in static folder
-```bash
-$ cd CodeCraft/static
-```
-Install dependencies
-```bash
-$ npm i
 ```
 
-```bash
-$ npm run compile_sass
-```
 # Create initial database with tables and data
 ```bash
 $ flask init-db
@@ -51,12 +37,3 @@ $ flask init-db
 ```bash
 $ flask run 
 ```
-
-# To test the protected routes
-Register a new user
-
-## To access '/dashboard'
-Login with your username and password
-
-## To access '/admin'
-Login with the username 'admin' and password 'password'

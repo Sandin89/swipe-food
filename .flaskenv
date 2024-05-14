@@ -1,1 +1,2 @@
 FLASK_APP = swiper
+FLASK_DEBUG = True
