@@ -25,7 +25,7 @@ def create_app(test_config=None):
       
     @app.route("/")
     def index():
-        return render_template("index.html")
+        return render_template("index.html", static_url_path='/static')
       
     @app.route("/recipe")
     def recipe():
