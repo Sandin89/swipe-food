@@ -6,9 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{% endblock %} - Fooder</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+  <!-- HALLÅ!!! FRÅGA MIG INTE HUR AYDA, DET FUNKAR MEN GAV UPP OCH BAD GRP EFTERSOM CSS INTE KAN TOLKA JINJA!!!! Du får gärna visa mig detta sen!!! -->
+
+
   <style>
-    
-    .background-image {
+    body::before {
+      content: '';
       position: fixed;
       top: 0;
       left: 0;
@@ -20,6 +25,7 @@
       z-index: -1;
     }
   </style>
+
 </head>
 <body>
   <div class="background-image"></div>
